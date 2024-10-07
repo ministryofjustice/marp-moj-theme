@@ -20,6 +20,23 @@ h2 {
 footer,
 section::after {
   color: var(--secondary-color);
+  bottom: 10px;
+}
+h1 {
+  font-size: 70px;
+  font-weight: normal;
+}
+img {
+  background-color: transparent;
+}
+img[alt~='center'] {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+table {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Title Slide */
@@ -37,32 +54,6 @@ section.title h4,
 section.title h5 {
   color: var(--secondary-color);
 }
-
-/* Shared */
-h1 {
-  font-size: 70px;
-  font-weight: normal;
-}
-img {
-  background-color: transparent;
-}
-img[alt~='center'] {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-footer,
-section::after {
-  bottom: 10px;
-}
-table {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-/* section.title img {
-  filter: none;
-} */
 section.title header {
   top: 80px;
   left: 80px;
@@ -94,11 +85,6 @@ section.columns li {
 section.columns,
 section.removeBoxShadow {
   box-shadow: none;
-}
-section.title header img,
-section.columns footer img,
-section.removeBoxShadow footer img {
-  filter: invert(100%);
 }
 section.columns::after,
 section.removeBoxShadow::after {
